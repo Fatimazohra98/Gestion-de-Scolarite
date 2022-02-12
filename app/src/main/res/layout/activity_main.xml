@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColor="#D676E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <Button
+        android:id="@+id/gestion_etudiant"
+
+        android:layout_width="253dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="99dp"
+
+
+        android:background="#B88D8D"
+        android:text="Gestion des etudiants"
+        android:textColor="#F8D0C9"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gestion_notes"
+        android:layout_width="242dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="52dp"
+        android:background="#B88D8D"
+        android:text="Notes / Bulettins "
+        android:textColor="#F8D0C9"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gestion_etudiant"
+        tools:textColor="#F8D0C9" />
+
+    <Button
+        android:id="@+id/gestion_modules"
+        android:layout_width="242dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="53dp"
+        android:background="#B88D8D"
+        android:text="Filieres/Modules"
+        android:textColor="#FFC9BF"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gestion_notes" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="401dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gestion_modules"
+        app:srcCompat="@drawable/pic2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
